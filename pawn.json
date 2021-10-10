@@ -4,23 +4,23 @@
     "include_path": "include",
     "resources": [
         {
-			"name": "^mysql-.+-linux?.zip$",
+	    "name": "linux.tar.gz",
             "platform": "linux",
             "archive": true,
-            "includes": ["mysql-.+\\/include"],
-            "plugins": ["mysql-.+\\/plugins\\/mysql.so"],
+            "includes": ["include"],
+            "plugins": ["plugins/mysql.so"],
             "files": {
-                "mysql-.+\\/log-core.dll": "log-core.so"
+                "log-core.dll": "log-core.so"
             }
         },
         {
-            "name": "^mysql-.+-win?.zip$",
+            "name": "win.zip",
             "platform": "windows",
             "archive": true,
-            "includes": ["mysql-.+\\/include"],
-            "plugins": ["mysql-.+\\/plugins\\/mysql.dll"],
+            "includes": ["include"],
+            "plugins": ["/plugins/mysql.dll"],
             "files": {
-                "mysql-.+\\/libmySQL.dll": "libmySQL.so"
+                "libmySQL.dll": "libmySQL.so"
             }
         }
     ],
