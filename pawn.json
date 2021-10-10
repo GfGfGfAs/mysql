@@ -1,0 +1,30 @@
+{
+    "user": "GfGfGfAs",
+    "repo": "mysql",
+    "include_path": "include",
+    "resources": [
+        {
+			"name": "^mysql-.+-linux?.zip$",
+            "platform": "linux",
+            "archive": true,
+            "includes": ["mysql-.+\\/include"],
+            "plugins": ["mysql-.+\\/plugins\\/mysql.so"],
+            "files": {
+                "mysql-.+\\/log-core.dll": "log-core.so"
+            }
+        },
+        {
+            "name": "^mysql-.+-win?.zip$",
+            "platform": "windows",
+            "archive": true,
+            "includes": ["mysql-.+\\/include"],
+            "plugins": ["mysql-.+\\/plugins\\/mysql.dll"],
+            "files": {
+                "mysql-.+\\/libmySQL.dll": "libmySQL.so"
+            }
+        }
+    ],
+    "runtime": {
+        "plugins": ["GfGfGfAs/mysql"]
+    }
+}
