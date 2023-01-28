@@ -9,9 +9,6 @@
             "archive": true,
             "includes": ["include"],
             "plugins": ["plugins/mysql.so"],
-            "files": {
-                "log-core.dll": "log-core.so"
-            }
         },
         {
             "name": "win.zip",
