@@ -8,7 +8,7 @@
             "platform": "linux",
             "archive": true,
             "includes": ["include"],
-            "plugins": ["plugins/mysql.so"],
+            "plugins": ["plugins/mysql.so"]
         },
         {
             "name": "win.zip",
